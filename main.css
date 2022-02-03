@@ -7,6 +7,8 @@ after you insert hammer image from index.html
 */
 body{
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgb(59, 59, 59);
+	color: lightgrey;
 }
 nav ul li {
 	display: inline;
@@ -33,4 +35,25 @@ p {
 	font-size: small;
 	margin-top: 10pt;
 	text-align: center;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+a:link{
+	color:whitesmoke;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:visited{
+	color:palevioletred;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
 }
