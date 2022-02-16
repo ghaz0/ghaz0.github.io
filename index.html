@@ -2,63 +2,100 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Gabe's Homepage</title>
-        <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabe's Page</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" 
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+        crossorigin="anonymous">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                height: 100%;
+                margin: 0;
+                background: rgb(2,0,36);
+                background: linear-gradient(180deg, rgba(2,0,36,1) 32%, rgba(1,9,57,1) 64%, 
+                rgba(96,0,159,1) 89%, rgba(185,0,150,1) 100%);
+                /*linear-gradient(180deg, rgba(2,0,36,1) 32%, 
+                rgba(1,9,57,1) 54%, rgba(96,0,159,1) 85%, rgba(185,0,150,1) 100%);*/
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            #whiteColorIcon{
+                color:rgb(255, 255, 255);
+            }
+            /*another instance of @media can be found in style.css*/
+            @media only screen and (max-width: 720px){
+                tinyScreen {display:none;}
+            }
+            .paragraphStyle{
+                color: #d6225b;
+                /*#fe6675; #00ebb8;*/
+            }
+            .paragraphStyle2{
+                color: #ff7b00;
+            }
+        </style>
     </head>
     <body>
-        <!-- This is a comment -->
-        <h1> About Gabe H. </h1>
-        <p>Gabe is a Computer Science student at Bridgewater State University. When he isn't studying or working retail,
-            he is occupied with multi-faceted projects that are more than hobbies. He has previously completed a Bachelors in English,
-            has taken courses from Computer Graphics Masters Academy (an art instruction school whose alumni
-            work in art-heavy industries such as film, video game development, and comics), and has taken a course about the "Oxford Fantasists"
-            (Tolkien, C.S. Lewis, etc.) at Oxford University, Oxford, United Kingdom.</p>
-        <p>Here is a list of personal sites to be referenced in the construction of this one.</p>
-        <ul>
-            <li>
-            <a href="https://seikyung.github.io/"><i>(1) Dr. Seikyung Jung</i></a> 
-            <br>The essential reference site
-            </li>
-            <li>
-            <a href="https://www.shadmbrooks.com/"><i>(2) Shad M. Brooks</i> </a> 
-            <br> Fantasy Author, known online for his videos on the accuracy and authenticity of Historical Martial Arts (often Western) as portrayed in popular media
-            and the history behind the portrayals
-            </li>
-            <li>
-            <a href="https://www.mrcrayfish.com/"><i>(3) MrCrayfish</i> </a> 
-            <br>Youtuber, Videogame Modder
-            </li>
-            <li>
-            <a href="https://peterhanstyle.artstation.com/"><i>(4) Peter Han</i></a>
-            <br>Professional Illustrator well-known in the art and illustration industry, Author of the "Dynamic Bible" and course creator/instructor of Dynamic Sketching I and II 
-            </li>
-            <li>
-            <a href="https://www.kimjunggius.com/"><i>(5) Kim Jung Gi (US Site)</i></a>
-            <br>Renowned modern artist and illustrator, known for his incredible grasp and intuition on perspective in his works and his extensive visual library
-            </li>
-            <li>
-            <a href="https://www.proko.com/"><i>(6) Stan Prokopenko</i></a>
-            <br>Major online art instructor, Youtuber, and co-host of the Draftsmen's podcast
-            </li>
-            <li>
-            <a href="https://mick-gordon.com/"><i>(7) Mick Gordon</i></a>
-            <Br>Composer and sound designer known for his work on DOOM's (2016 reboot of the famous/infamous video game) soundtrack with his aggressive and iconic riffs
-            </li>
-            <li>
-            <a href="https://community.onelonecoder.com/"><i>(8) "Javidx9"</i></a>
-            <br>Tech Youtuber in the coder sphere of the tech Youtube community
-            </li>
-            <li>
-            <a href="https://linustechtips.com/"><i>(9) Linus Tech Tips</i></a>
-            <br>Major tech Youtuber known for what's mentioned in his moniker, tech tips
-            </li>
-            <li>
-            <a href="https://www.brandonsanderson.com/"><i>(10) Brandon Sanderson</i></a>
-            <br>Well-known figure in Sci-fi/Fantasy literature circles, his major works being the Mistborn series and the Stormlight Archive 
-            </li>
-
-        </ul>
-        <p><a href="assignment0.html">Assignment0 - Image Map</a></p>
-        <p>Last page update: 11:30 on 2-2-2022</p>
+        <div id="layout" class>
+            <a href="#menu" id="menuLink" class="menu-link">
+                <!-- Hamburger Icon -->
+                <span>
+                </span>
+            </a>
+            <div id="menu" class>
+                <div class="pure-menu">
+                    <!-- title that returns to homepage with href-->
+                    <a class="pure-menu-heading" href="#gabesPage">Gabe's Page</a>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item">
+                            <a href="index.html" class="pure-menu-link">
+                                <i id="whiteColorIcon" class="fa fa-terminal" aria-hidden="true"></i>
+                                Main Page</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="assets/DevInternshipResumeHazeldine.pdf" class="pure-menu-link">
+                                <i id="whiteColorIcon" class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                Resume PDF<br>(Non-Mobile)</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="assignment0.html" class="pure-menu-link">
+                                <i id="whiteColorIcon" class="fa fa-space-shuttle fa-rotate-270" aria-hidden="true"></i>
+                                My Side Project<br>(Page WIP)</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="backbone.html" class="pure-menu-link">
+                                <i id="whiteColorIcon" class="fa fa-wrench" aria-hidden="true"></i>
+                                Old Homepage</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main">
+                <div class="header">
+                    <h1>About Me</h1>
+                    <tinyScreen>
+                        <h2>A Small Bit and Not Too Much</h2>
+                    </tinyScreen>
+                </div>
+                <div class="content">
+                    <div class="col-lg">
+                        <h2 class="content-subhead">What I Do That's CV Worthy</h2>
+                        <p class="paragraphStyle">tes test test</p>
+                    </div>
+                    <div class="col-lg">
+                        <h2 class="content-subhead">What I Do That's Related to Professional Pursuits</h2>
+                        <p class="paragraphStyle">TODO: insert text description, do more work
+                            on the color palette (particularly the menu, perhaps a 
+                            more retro font as well), and add pics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/testA.js"></script>
     </body>
-</html> 
+</html>
