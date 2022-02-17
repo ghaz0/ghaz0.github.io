@@ -137,7 +137,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-selected,
     #menu .pure-menu-heading {
-        background: #ff7b00;
+        background: #0088d6;
     }
         /*
         This styles a link within a selected menu item `<li>`.
@@ -151,7 +151,7 @@ appears on the left side of the page.
     */
     #menu .pure-menu-heading {
         font-size: 110%;
-        color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
         margin: 0;
     }
 
